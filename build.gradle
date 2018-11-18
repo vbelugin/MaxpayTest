@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+ext.selenide_version = '5.0.1'
+ext.restassured_version = '3.2.0'
+ext.junit_version = '4.12'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+group 'MaxpayTest'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+dependencies {
+    compile "io.rest-assured:rest-assured:$restassured_version"
+    compile group: 'junit', name: 'junit', version: junit_version
+    compile "com.codeborne:selenide:$selenide_version"
+    compile 'org.projectlombok:lombok:1.18.2'
+    compile group: 'org.assertj', name: 'assertj-core', version: '3.4.1'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
+}
