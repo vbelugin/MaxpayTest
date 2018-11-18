@@ -1,4 +1,4 @@
-package UI;
+package UI.Utils;
 
 import java.util.ResourceBundle;
 

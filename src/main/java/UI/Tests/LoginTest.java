@@ -2,7 +2,7 @@ package UI.Tests;
 
 import UI.Page.Dashboard;
 import UI.Page.LoginPage;
-import UI.Context;
+import UI.Utils.Context;
 import com.codeborne.selenide.Condition;
 import org.junit.Test;
 
