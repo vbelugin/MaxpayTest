@@ -24,7 +24,7 @@ public class MaxpayTestAPI {
         Film film = new FilmActions(planet.getFilms().get(0)).getFilm();
         softAssert.assertThat(film.getTitle()).isEqualTo("Attack of the Clones");
 
-        softAssert.assertThat(film.getCharacters()).contains(character.getUrl());
+        softAssert.assertThat(film.getCharacters()).doesNotContain(character.getUrl());
         softAssert.assertThat(film.getPlanets()).contains(planet.getUrl());
         softAssert.assertAll();
     }
