@@ -1,6 +1,5 @@
 package API.Actions;
 
-import API.Models.Film;
 import API.Models.People;
 import API.Models.Root;
 import io.restassured.RestAssured;
@@ -11,7 +10,7 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 
 public class PeopleActions {
-    RequestSpecification requestSpecification;
+    private RequestSpecification requestSpecification;
 
     public PeopleActions(int id) {
         requestSpecification = new RequestSpecBuilder()

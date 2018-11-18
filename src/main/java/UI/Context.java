@@ -11,5 +11,4 @@ public class Context {
         ResourceBundle rb = ResourceBundle.getBundle("maxpay");
         return rb.getString(key);
     }
-
 }

@@ -26,64 +26,64 @@ public class Film {
     private List<String> species;
     private String producer;
 
-    public String getEdited(){
+    public String getEdited() {
         return edited;
     }
 
-    public String getDirector(){
+    public String getDirector() {
         return director;
     }
 
-    public String getCreated(){
+    public String getCreated() {
         return created;
     }
 
-    public List<String> getVehicles(){
+    public List<String> getVehicles() {
         return vehicles;
     }
 
-    public String getOpeningCrawl(){
+    public String getOpeningCrawl() {
         return openingCrawl;
     }
 
-    public String getTitle(){
+    public String getTitle() {
         return title;
     }
 
-    public String getUrl(){
+    public String getUrl() {
         return url;
     }
 
-    public List<String> getCharacters(){
+    public List<String> getCharacters() {
         return characters;
     }
 
-    public int getEpisodeId(){
+    public int getEpisodeId() {
         return episodeId;
     }
 
-    public List<String> getPlanets(){
+    public List<String> getPlanets() {
         return planets;
     }
 
-    public String getReleaseDate(){
+    public String getReleaseDate() {
         return releaseDate;
     }
 
-    public List<String> getStarships(){
+    public List<String> getStarships() {
         return starships;
     }
 
-    public List<String> getSpecies(){
+    public List<String> getSpecies() {
         return species;
     }
 
-    public String getProducer(){
+    public String getProducer() {
         return producer;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return
                 "Response{" +
                         "edited = '" + edited + '\'' +

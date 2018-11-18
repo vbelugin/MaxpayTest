@@ -1,5 +1,5 @@
 package API.Models;
 
-public class BaseModel {
+class BaseModel {
     String name;
 }

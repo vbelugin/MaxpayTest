@@ -29,67 +29,67 @@ public class People extends BaseModel {
     private List<String> starships;
     private String height;
 
-    public List<String> getFilms(){
+    public List<String> getFilms() {
         return films;
     }
 
-    public String getHomeworld(){
+    public String getHomeworld() {
         return homeworld;
     }
 
-    public String getGender(){
+    public String getGender() {
         return gender;
     }
 
-    public String getSkinColor(){
+    public String getSkinColor() {
         return skinColor;
     }
 
-    public String getEdited(){
+    public String getEdited() {
         return edited;
     }
 
-    public String getCreated(){
+    public String getCreated() {
         return created;
     }
 
-    public String getMass(){
+    public String getMass() {
         return mass;
     }
 
-    public List<String> getVehicles(){
+    public List<String> getVehicles() {
         return vehicles;
     }
 
-    public String getUrl(){
+    public String getUrl() {
         return url;
     }
 
-    public String getBirthYear(){
+    public String getBirthYear() {
         return birthYear;
     }
 
-    public String getHairColor(){
+    public String getHairColor() {
         return hairColor;
     }
 
-    public String getEyeColor(){
+    public String getEyeColor() {
         return eyeColor;
     }
 
-    public List<String> getSpecies(){
+    public List<String> getSpecies() {
         return species;
     }
 
-    public List<String> getStarships(){
+    public List<String> getStarships() {
         return starships;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public String getHeight(){
+    public String getHeight() {
         return height;
     }
 }

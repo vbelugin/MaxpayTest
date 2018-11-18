@@ -3,16 +3,14 @@ package API.Actions;
 import API.Models.Film;
 import API.Models.Root;
 import io.restassured.RestAssured;
-import io.restassured.builder.ResponseBuilder;
-import io.restassured.filter.log.LogDetail;
-import io.restassured.http.ContentType;
-import io.restassured.internal.RequestSpecificationImpl;
-import io.restassured.specification.RequestSpecification;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.filter.log.LogDetail;
+import io.restassured.http.ContentType;
+import io.restassured.specification.RequestSpecification;
 
 public class FilmActions {
-    RequestSpecification requestSpecification;
+    private RequestSpecification requestSpecification;
 
     public FilmActions(int id) {
         requestSpecification = new RequestSpecBuilder()

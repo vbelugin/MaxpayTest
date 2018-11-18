@@ -2,7 +2,6 @@ package API.Actions;
 
 import API.Models.Root;
 import API.Models.Species;
-import API.Models.Starship;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -11,7 +10,7 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 
 public class SpeciesActions {
-    RequestSpecification requestSpecification;
+    private RequestSpecification requestSpecification;
 
     public SpeciesActions(int id) {
         requestSpecification = new RequestSpecBuilder()

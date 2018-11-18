@@ -1,6 +1,5 @@
 package API.Actions;
 
-import API.Models.Planet;
 import API.Models.Root;
 import API.Models.Vehicle;
 import io.restassured.RestAssured;
@@ -11,7 +10,7 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 
 public class VehicleActions {
-    RequestSpecification requestSpecification;
+    private RequestSpecification requestSpecification;
 
     public VehicleActions(int id) {
         requestSpecification = new RequestSpecBuilder()
