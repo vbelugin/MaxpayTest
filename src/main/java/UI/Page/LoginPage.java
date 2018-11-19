@@ -11,8 +11,8 @@ import static com.codeborne.selenide.Selenide.page;
 public class LoginPage {
     private SelenideElement loginInput = $(By.id("login-email")),
                             passwordInput = $(By.id("login-password")),
-                            submitBtn = $(By.cssSelector("button[type='submit']"));
-    public SelenideElement  loginError = $(By.id("login-email-error")),
+                            submitBtn = $(By.cssSelector("button[type='submit']")),
+                            loginError = $(By.id("login-email-error")),
                             passwordError = $(By.id("login-password-error")),
                             wrongCredentialsAlert = $(By.cssSelector("div.alert-danger"));
 
@@ -46,5 +46,17 @@ public class LoginPage {
     public LoginPage submitLoginWithError() {
         submitBtn.shouldBe(Condition.enabled).click();
         return page(this);
+    }
+
+    public void assertLoginError() {
+        loginError.should(Condition.appear);
+    }
+
+    public void assertPasswordError() {
+        passwordError.should(Condition.appear);
+    }
+
+    public void assertWrongCredentialsAlert() {
+        wrongCredentialsAlert.should(Condition.appear);
     }
 }

@@ -21,7 +21,7 @@ public class LoginTest {
         new LoginPage()
                 .passOnlyPassword(Context.password)
                 .submitLoginWithError()
-                .loginError.should(Condition.appear);
+                .assertLoginError();
         }
 
     @Test
@@ -29,7 +29,7 @@ public class LoginTest {
         new LoginPage()
                 .passOnlyLogin(Context.login)
                 .submitLoginWithError()
-                .passwordError.should(Condition.appear);
+                .assertPasswordError();
     }
 
     @Test
@@ -37,7 +37,6 @@ public class LoginTest {
         new LoginPage()
                 .passCredentials("random@email.com", "Random123+")
                 .submitLoginWithError()
-                .wrongCredentialsAlert
-                .should(Condition.appear);
+                .assertWrongCredentialsAlert();
     }
 }
